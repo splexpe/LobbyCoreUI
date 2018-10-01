@@ -9,7 +9,7 @@ LobbyCore UI plugin 1.6
 - Fly UI (Finish)
 - Hide-Show Players Item (Finish)
 - Info UI (Next UPDATE!)
-- Easy Config (Next UPDATE!)
+- Easy Config (Navigator Config)
 - Party Menu (Soon...)
 -----------
 Party Menu (In Plugin PHP)

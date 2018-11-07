@@ -10,7 +10,7 @@ LobbyCore UI plugin 1.7
 - Hide-Show Players Item (Finish)
 - Info UI (Next UPDATE!)
 - Easy Config (Navigator Config)
-- Party Menu (Soon...)
+- Party Menu (Soon...) 
 -----------
 Party Menu (In Plugin PHP)
 

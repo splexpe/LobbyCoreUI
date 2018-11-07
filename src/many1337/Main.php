@@ -35,7 +35,7 @@ class Main extends PluginBase implements Listener
         $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
         $pri = $this->getServer()->getPluginManager()->getPlugin("ProfileUI");
         if($api === null){
-            $this->getServer()->getLogger()->notice("[LobbyCore] Please replace a FormAPI plugin!");
+            $this->getServer()->getLogger()->notice("[LobbyCore] Please use a FormAPI plugin!");
         }
 
         if($pri === null){

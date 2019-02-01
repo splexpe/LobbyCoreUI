@@ -24,6 +24,7 @@ use pocketmine\event\entity\ProjectileHitEvent;
 use pocketmine\event\entity\ProjectileLaunchEvent;
 use pocketmine\event\Listeners;
 use pocketmine\utils\TextFormat;
+use pocketmine\scheduler\Task;
 use pocketmine\level\Level;
 
 
@@ -221,4 +222,21 @@ class Main extends PluginBase implements Listener
             }
         }
     }
+}
+
+class ElderGuardianTask extends Task {
+	private $player;
+	private $plugin;
+	public function __construct(Main $plugin, Player $player){
+        $this->plugin = $plugin;
+		    $this->player = $player;
+	}
+	
+	public function onRun(int $currentTick): void {
+		$pk = new LevelEventPacket();
+		$pk->evid = LevelEventPacket::EVENT_GUARDIAN_CURSE;
+		$pk->data = 0;
+		$pk->position = $this->player->asVector3();
+		$this->player->dataPacket($pk);
+	}
 }

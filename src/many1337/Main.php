@@ -47,13 +47,6 @@ class Main extends PluginBase implements Listener
         }
     }
 
-    public static function getInstance(){
-        return self::$instance;
-    }
-    public function onLoad(){
-        self::$instance = $this;
-    }
-
     public function onDisable()
     {
         foreach ($this->getServer()->getOnlinePlayers() as $p) {

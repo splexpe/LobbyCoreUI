@@ -61,7 +61,6 @@ class Main extends PluginBase implements Listener
         $name = $player->getName();
         $this->Main($player);
         $event->setJoinMessage("§7[§9+§7] §9" . $name);
-        $this->getScheduler()->scheduleDelayedTask(new GuardianTask($this, $player), 30);
 
     }
 
